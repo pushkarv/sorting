@@ -9,6 +9,7 @@ def insertionsort(A):
     i = 1
     while i < len(A):
         j = i
+        #work backwards from i index and sort 0 to i elements
         while j > 0 and A[j-1] > A[j]:
             #swap elements
             A[j], A[j-1] = A[j-1], A[j]
